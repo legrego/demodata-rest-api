@@ -1,4 +1,8 @@
 ---
+checks:
+  file-lines:
+    config:
+      threshold: 250
 engines:
   csslint:
     enabled: true
