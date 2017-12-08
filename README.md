@@ -1,13 +1,13 @@
-# Holiday REST API
-A simple REST API for working with national holidays.
+# DemoData REST API
+A simple REST API for working with Demo Data.
 Part of the [DevAPIs.io](https://devapis.io) suite of free development APIs
 
-[![Build Status](https://travis-ci.org/legrego/holiday-rest-api.svg?branch=master)](https://travis-ci.org/legrego/holiday-rest-api)
-[![Maintainability](https://api.codeclimate.com/v1/badges/8375d339aa18e29a71a4/maintainability)](https://codeclimate.com/github/legrego/holiday-rest-api/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/8375d339aa18e29a71a4/test_coverage)](https://codeclimate.com/github/legrego/holiday-rest-api/test_coverage)
+[![Build Status](https://travis-ci.org/legrego/demodata-rest-api.svg?branch=master)](https://travis-ci.org/legrego/demodata-rest-api)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4d3b31800fcd3bcfcb7f/maintainability)](https://codeclimate.com/github/legrego/demodata-rest-api/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4d3b31800fcd3bcfcb7f/test_coverage)](https://codeclimate.com/github/legrego/demodata-rest-api/test_coverage)
 
 ## Details
-This is a REST wrapper around the excellent [`date-holidays`](https://github.com/commenthol/date-holidays) package by [commenthol](https://github.com/commenthol)
+This is a REST wrapper around the excellent [`faker`](https://github.com/Marak/Faker.js) package by [Marak](https://github.com/Marak)
 
 ## Building
 Download this repository, and run the following commands:
