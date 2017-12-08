@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "alwaysStrict": true,
+        "declaration": false,
+        "outDir": "dist"
+    },
+    "include": [
+        "typings/date-holidays.d.ts",
+        "src/**/*.ts"
+    ]
+}

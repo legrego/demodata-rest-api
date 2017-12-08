@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+dist/
+attic/
+tmp/
+*.log
+*.tgz
+*.sh
+.eslintcache
+.idea/
