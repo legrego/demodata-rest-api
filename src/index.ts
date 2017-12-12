@@ -10,7 +10,7 @@ let port: number;
 const envPort = parseInt(process.env.PORT, 10);
 
 if (isNaN(envPort)) {
-    port = 8010;
+    port = 8020;
 } else {
     port = envPort;
 }

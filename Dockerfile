@@ -1,6 +1,6 @@
 FROM node:8
 
-EXPOSE 8010
+EXPOSE 8020
 
 RUN mkdir /node-app
 
