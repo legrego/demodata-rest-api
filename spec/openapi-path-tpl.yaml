@@ -1,0 +1,14 @@
+"%%PATH_NAME%%":
+    get:
+      tags:
+        - %%TAG%%
+      description: "[See Faker API](http://marak.github.io/faker.js/)"
+      parameters:
+        - $ref: '#/components/parameters/count'
+      responses:
+        200:
+          description: Demo Data Response
+          content:
+            application/json:
+              schema:
+                type: array

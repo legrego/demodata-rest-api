@@ -1,0 +1,2115 @@
+openapi: '3.0.0'
+info:
+  title: DemoData API
+  description: An API for generating demo data
+  termsOfService: ''
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  contact:
+    name: Larry Gregory
+    url: 'https://devapis.io'
+  version: '0.1.0'
+paths:
+  "/random":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/number":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/arrayElement":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/objectElement":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/uuid":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/boolean":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/word":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/words":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/image":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/locale":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/random/alphaNumeric":
+      get:
+        tags:
+          - random
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/firstName":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/lastName":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/findName":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/jobTitle":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/prefix":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/suffix":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/title":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/jobDescriptor":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/jobArea":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/name/jobType":
+      get:
+        tags:
+          - name
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/zipCode":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/city":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/cityPrefix":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/citySuffix":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/streetName":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/streetAddress":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/streetSuffix":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/streetPrefix":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/secondaryAddress":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/county":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/country":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/countryCode":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/state":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/stateAbbr":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/latitude":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/address/longitude":
+      get:
+        tags:
+          - address
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/suffixes":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/companyName":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/companySuffix":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/catchPhrase":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/bs":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/catchPhraseAdjective":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/catchPhraseDescriptor":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/catchPhraseNoun":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/bsAdjective":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/bsBuzz":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/company/bsNoun":
+      get:
+        tags:
+          - company
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/account":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/accountName":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/mask":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/amount":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/transactionType":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/currencyCode":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/currencyName":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/currencySymbol":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/bitcoinAddress":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/iban":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/finance/bic":
+      get:
+        tags:
+          - finance
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/image":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/avatar":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/imageUrl":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/abstract":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/animals":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/business":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/cats":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/city":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/food":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/nightlife":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/fashion":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/people":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/nature":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/sports":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/technics":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/transport":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/image/dataUri":
+      get:
+        tags:
+          - image
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/word":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/words":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/sentence":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/slug":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/sentences":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/paragraph":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/paragraphs":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/text":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/lorem/lines":
+      get:
+        tags:
+          - lorem
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker/abbreviation":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker/adjective":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker/noun":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker/verb":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker/ingverb":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/hacker/phrase":
+      get:
+        tags:
+          - hacker
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/avatar":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/email":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/exampleEmail":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/userName":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/protocol":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/url":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/domainName":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/domainSuffix":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/domainWord":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/ip":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/ipv6":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/userAgent":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/color":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/mac":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/internet/password":
+      get:
+        tags:
+          - internet
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/database":
+      get:
+        tags:
+          - database
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/database/column":
+      get:
+        tags:
+          - database
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/database/type":
+      get:
+        tags:
+          - database
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/database/collation":
+      get:
+        tags:
+          - database
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/database/engine":
+      get:
+        tags:
+          - database
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/phone":
+      get:
+        tags:
+          - phone
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/phone/phoneNumber":
+      get:
+        tags:
+          - phone
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/phone/phoneNumberFormat":
+      get:
+        tags:
+          - phone
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/phone/phoneFormats":
+      get:
+        tags:
+          - phone
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date/past":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date/future":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date/between":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date/recent":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date/month":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/date/weekday":
+      get:
+        tags:
+          - date
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/color":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/department":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/productName":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/price":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/productAdjective":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/productMaterial":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/commerce/product":
+      get:
+        tags:
+          - commerce
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/fileName":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/commonFileName":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/mimeType":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/commonFileType":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/commonFileExt":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/fileType":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/fileExt":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/directoryPath":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/filePath":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+  "/system/semver":
+      get:
+        tags:
+          - system
+        description: "[See Faker API](http://marak.github.io/faker.js/)"
+        parameters:
+          - $ref: '#/components/parameters/count'
+        responses:
+          200:
+            description: Demo Data Response
+            content:
+              application/json:
+                schema:
+                  type: array
+
+components:
+  parameters:
+    count:
+      name: count
+      description: "Specify a number between 1 and 1000 (inclusive). Default is 1."
+      in: query
+      required: false
+      example: '10'
+      schema:
+        type: "string"
+  links: {}
+  callbacks: {}
+servers:
+  - url: "https://demodata.devapis.io/v1"
+    description: "Public DemoData API Server"

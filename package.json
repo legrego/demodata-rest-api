@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node_modules/.bin/tsc",
+    "generate-spec": "node_modules/.bin/ts-node ./spec/generate-spec.ts",
     "start": "node_modules/.bin/ts-node src/index.ts",
     "lint": "npm run lint:ts",
     "lint:ts": "tslint \"./src/**/*.ts\" \"./src/**/*.tsx\"",

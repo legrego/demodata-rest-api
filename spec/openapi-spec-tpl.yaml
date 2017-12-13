@@ -1,0 +1,28 @@
+openapi: '3.0.0'
+info:
+  title: DemoData API
+  description: An API for generating demo data
+  termsOfService: ''
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  contact:
+    name: Larry Gregory
+    url: 'https://devapis.io'
+  version: '0.1.0'
+%%PATH_DATA_HERE%%
+components:
+  parameters:
+    count:
+      name: count
+      description: "Specify a number between 1 and 1000 (inclusive). Default is 1."
+      in: query
+      required: false
+      example: '10'
+      schema:
+        type: "string"
+  links: {}
+  callbacks: {}
+servers:
+  - url: "https://demodata.devapis.io/v1"
+    description: "Public DemoData API Server"
